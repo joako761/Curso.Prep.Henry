@@ -39,8 +39,8 @@ function invocarMetodo(objeto, metodo) {
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
-  // Tu código:
-  var producto = objetoMisterioso.numeroMisterioso * 5;
+  // Tu código: 
+  var producto = objetoMisterioso.numeroMisterioso * 5; 
   return producto;
 }
 
@@ -50,7 +50,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // Devuelve el objeto
   // Tu código:
    delete objeto[unaPropiedad]
-   return objeto;
+   return objeto; 
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -76,7 +76,7 @@ function tieneEmail(usuario) {
 
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
-  // "propiedad" es un string
+  // "propiedad" es un string 
   // De lo contrario, devuelve "false"
   // Tu código:
   if(objeto[propiedad]){
@@ -92,7 +92,7 @@ function verificarPassword(usuario, password) {
   // De lo contrario, devuelve "false"
   // // Tu código:
   return  usuario  ['password'] === password;
-}
+} 
 
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -146,7 +146,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  producto.calcularPrecioDescuento = function(){
+ producto.calcularPrecioDescuento = function(){
    return producto.precio - (producto.precio * producto.porcentajeDeDescuento );  
   }
 return producto;
